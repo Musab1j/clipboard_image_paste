@@ -1,0 +1,36 @@
+name: clipboard_image_paste_ios
+description: "iOS implementation of the clipboard_image_paste plugin, which reads images from the system clipboard."
+version: 0.1.0
+repository: https://github.com/Musab1j/clipboard_image_paste/tree/main/packages/clipboard_image_paste_ios
+issue_tracker: https://github.com/Musab1j/clipboard_image_paste/issues
+topics:
+  - clipboard
+  - image
+  - paste
+
+resolution: workspace
+
+environment:
+  sdk: ^3.12.0
+  flutter: ">=3.44.0"
+
+flutter:
+  plugin:
+    implements: clipboard_image_paste
+    platforms:
+      ios:
+        pluginClass: ClipboardImagePastePlugin
+        dartPluginClass: ClipboardImagePasteIOS
+
+dependencies:
+  clipboard_image_paste_platform_interface: ^0.1.0
+  flutter:
+    sdk: flutter
+  # Imported by the Pigeon-generated messages.g.dart.
+  meta: ^1.15.0
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+  pigeon: ^29.0.12

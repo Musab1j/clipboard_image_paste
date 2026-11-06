@@ -1,0 +1,37 @@
+name: clipboard_image_paste
+description: "Paste images from the system clipboard on Android and iOS. Check for and read clipboard images, and let users paste them into a TextField."
+version: 0.1.0
+repository: https://github.com/Musab1j/clipboard_image_paste/tree/main/packages/clipboard_image_paste
+issue_tracker: https://github.com/Musab1j/clipboard_image_paste/issues
+topics:
+  - clipboard
+  - image
+  - paste
+  - text-field
+
+resolution: workspace
+
+environment:
+  sdk: ^3.12.0
+  flutter: ">=3.44.0"
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        default_package: clipboard_image_paste_android
+      ios:
+        default_package: clipboard_image_paste_ios
+
+dependencies:
+  clipboard_image_paste_android: ^0.1.0
+  clipboard_image_paste_ios: ^0.1.0
+  clipboard_image_paste_platform_interface: ^0.1.0
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+  plugin_platform_interface: ^2.1.8

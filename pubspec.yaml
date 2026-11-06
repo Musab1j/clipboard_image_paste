@@ -1,0 +1,12 @@
+name: clipboard_image_paste_workspace
+publish_to: none
+
+environment:
+  sdk: ^3.12.0
+
+workspace:
+  - packages/clipboard_image_paste
+  - packages/clipboard_image_paste/example
+  - packages/clipboard_image_paste_android
+  - packages/clipboard_image_paste_ios
+  - packages/clipboard_image_paste_platform_interface
